@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+  <title>Cash Manager</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/body.css">
+  <link rel="stylesheet" href="CSS/balance.css">
+  <link rel="stylesheet" href="CSS/cashForm.css">
+</head>
+<body>
+  <div class="content hidden">
+    <div class="cash">
+      <span id="cash-text">잔액</span>
+    </div>
+    <button class="income">수입</button>
+    <button class="outlay">지출</button>
+  </div>
+
+  <form class="cashConfirm hidden">
+    <input id="cashConfirm-input" type="number" placeholder="현금이 얼마나 있니?"  max="10000000" required />
+    <button id="cashConfirm-button">확인</button>
+  </form>
+
+  <form class="addCash hidden">
+    <input class="addCash-input" type="number" placeholder="얼마?" required />
+    <input class="addCash-content" type="text" maxlength="16" placeholder="내용은?" required />
+    <button class="addCash-complete">확인</button>
+    <button class="addCash-cancel">취소</button>
+    <span class="error-message hidden"></span>
+  </form>
+
+  <div id="cashContent">
+    <div id="cashContent-1"></div>
+    <div id="cashContent-2"></div>
+    <div id="cashContent-3"></div>
+    <div id="cashContent-4"></div>
+    <div id="cashContent-5"></div>
+    <div id="cashContent-6"></div>
+    <div id="cashContent-7"></div>
+    <div id="cashContent-8"></div>
+  </div>
+
+  <button id="contentPopUpButton">입출 & 지출 내용</span>
+  
+  <script src="JS/balance.js"></script>
+  <script src="JS/popUpContent.js"></script>
+</body>
+</html>
